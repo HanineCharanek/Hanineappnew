@@ -7,11 +7,6 @@ import datetime
 from PIL import Image
 import datetime
 
-# Set the file paths
-
-
-
-
 # Load the data into a DataFrame
 data1 = pd.read_csv("data.csv")
 
@@ -289,7 +284,7 @@ if section == "Data Exploration and Analysis":
         import zipfile
         import pandas as pd
 
-        zip_file_path = r'C:\Users\student\Desktop\data (3).zip'
+        zip_file_path = 'data (3).zip'
         csv_file_name = 'data (3).csv'
 
         # Extract the CSV file from the ZIP archive
@@ -362,7 +357,7 @@ if section == "Data Exploration and Analysis":
             import zipfile
             import pandas as pd
 
-            zip_file_path = r'C:\Users\student\Desktop\data (3).zip'
+            zip_file_path = 'data (3).zip'
             csv_file_name = 'data (3).csv'
 
             # Extract the CSV file from the ZIP archive
