@@ -68,19 +68,18 @@ if section == "Overview":
         main()
      
     import streamlit as st
-    import webbrowser
 
     def main():
         st.markdown("## You can access the full dashboard by ECDC here 👇🏻")
         if st.button("Click me"):
             url = "https://vaccinetracker.ecdc.europa.eu/public/extensions/COVID-19/vaccine-tracker.html#uptake-tab"
-            webbrowser.open_new_tab(url)
+            new_tab = f'<a target="_blank" href="{url}">Click me</a>'
+            st.markdown(new_tab, unsafe_allow_html=True)
 
     if __name__ == "__main__":
         main()
 
-
-  
+    
         st.markdown("## About the Data 👩🏻‍💻")
         st.markdown("European Centre for Disease Prevention and Control Data")
         st.write("An agency of the European Union")
