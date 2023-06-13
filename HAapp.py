@@ -66,26 +66,25 @@ if section == "Overview":
 
     if __name__ == '__main__':
         main()
+     
+    import streamlit as st
 
-        def main():
-            st.markdown("## You can access the full dashboard by ECDC here 👇🏻")
-            if st.button("Click me"):
-        url = "https://vaccinetracker.ecdc.europa.eu/public/extensions/COVID-19/vaccine-tracker.html#uptake-tab"
-        new_tab = f'<a target="_blank" href="{url}">Click me</a>'
-        st.markdown(new_tab, unsafe_allow_html=True)
+    def main():
+        st.markdown("## You can access the full dashboard by ECDC here 👇🏻")
+        if st.button("Click me"):
+            url = "https://vaccinetracker.ecdc.europa.eu/public/extensions/COVID-19/vaccine-tracker.html#uptake-tab"
+            new_tab = f'<a target="_blank" href="{url}">Click me</a>'
+            st.markdown(new_tab, unsafe_allow_html=True)
 
     if __name__ == "__main__":
-       main()
-                
+      main()
 
         st.markdown("## About the Data 👩🏻‍💻")
         st.markdown("European Centre for Disease Prevention and Control Data")
         st.write("An agency of the European Union")
         st.write("Data source: [ECDC](https://www.ecdc.europa.eu/en/data/downloadable-datasets)")
         import webbrowser
-
         
-
         import streamlit as st
 
         # Dataset 1: 14-day notification rate of new COVID-19 cases and deaths
