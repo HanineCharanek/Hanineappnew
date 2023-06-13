@@ -77,7 +77,8 @@ if section == "Overview":
             st.markdown(new_tab, unsafe_allow_html=True)
 
     if __name__ == "__main__":
-      main()
+        main()
+
 
         st.markdown("## About the Data 👩🏻‍💻")
         st.markdown("European Centre for Disease Prevention and Control Data")
