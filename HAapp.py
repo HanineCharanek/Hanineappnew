@@ -69,13 +69,13 @@ if section == "Overview":
 
         def main():
             st.markdown("## You can access the full dashboard by ECDC here 👇🏻")
-            import webbrowser
             if st.button("Click me"):
-                url = "https://vaccinetracker.ecdc.europa.eu/public/extensions/COVID-19/vaccine-tracker.html#uptake-tab"
-                webbrowser.open_new_tab(url)
+        url = "https://vaccinetracker.ecdc.europa.eu/public/extensions/COVID-19/vaccine-tracker.html#uptake-tab"
+        new_tab = f'<a target="_blank" href="{url}">Click me</a>'
+        st.markdown(new_tab, unsafe_allow_html=True)
 
-        if __name__ == "__main__":
-            main()
+    if __name__ == "__main__":
+       main()
                 
 
         st.markdown("## About the Data 👩🏻‍💻")
