@@ -120,8 +120,8 @@ if section == "Home":
    
    
     # Load and display the photo
-    photo_path = r"C:\Users\student\Desktop\vacc.jpg"  
-    photo = Image.open(photo_path)
+    
+    photo = Image.open("vacc.jpg")
     st.image(photo, caption="The latest news, data and analysis on the European’s pandemic response.", use_column_width=True)
     st.markdown("<h2 style='color: blue; font-size: 22px;'>European Centre for Disease Prevention and Control</h2>", unsafe_allow_html=True)
    
