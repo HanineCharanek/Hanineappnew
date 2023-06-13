@@ -8,13 +8,13 @@ from PIL import Image
 import datetime
 
 # Set the file paths
-file_path = r'C:\Users\student\Desktop\data.csv'
+
 
 
 
 # Load the data into a DataFrame
-data1 = pd.read_csv(file_path)
-data= pd.read_csv(file_path, names=['country', 'country_code', 'continent', 'population', 'indicator', 'weekly_count', 'year_week', 'rate_14_day', 'cumulative_count', 'source', 'note'])
+data1 = pd.read_csv("data.csv")
+
 
 st.set_page_config(
     layout="wide",
@@ -138,10 +138,10 @@ if section == "Data Exploration and Analysis":
        
        
         # Define the file path
-        file_path3 = r'C:\Users\student\Desktop\data.csv'
+       
 
         # Read the CSV file into a pandas DataFrame
-        data = pd.read_csv(file_path3)
+        data = pd.read_csv("data.csv")
        
         # Define the available countries
         available_countries = data['country'].unique()
@@ -497,8 +497,8 @@ if section == "Data Exploration and Analysis":
         @st.cache  # Add caching to improve performance
         def load_data():
     # Read the data from the CSV file
-            data_path = r'C:\Users\student\Desktop\data1.csv'
-            data = pd.read_csv(data_path)
+            
+            data = pd.read_csv('data1.csv')
             return data
 
         def visualize_data(data, country, indicator):
@@ -570,10 +570,10 @@ if section == "Data Exploration and Analysis":
         @st.cache  # Add caching to improve performance
         def load_data():
             # Modify the data path to the location of the CSV file
-            data_pathhh = r'C:\Users\student\Desktop\new_data.csv'
+         
             
             # Read the data from the CSV file
-            data = pd.read_csv(data_pathhh)
+            data = pd.read_csv('new_data.csv')
             return data
 
         def main():
